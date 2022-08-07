@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_memoria/ChatScreen.dart';
+import 'package:flutter_application_memoria/main.dart';
 
 class MessageWidget extends StatelessWidget {
   const MessageWidget({
@@ -10,6 +12,13 @@ class MessageWidget extends StatelessWidget {
     return ListView(
       children: <Widget>[
         ListTile(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(builder: (BuildContext) {
+                return ChatScreen();
+              })
+            );
+          },
           contentPadding: const EdgeInsets.symmetric(
             horizontal: 20.0,
             vertical: 8.0,
@@ -39,11 +48,11 @@ class MessageWidget extends StatelessWidget {
             vertical: 8.0,
           ),
           leading: ClipOval( // 画像を丸く切り取る
-            child: Image.asset('assets/img/grandmother.png'), 
+            child: Image.asset('assets/img/mother.png'), 
           ),
-          title: Text("おばあちゃん"),
-          trailing: Text('3分前'),
-          subtitle: Text('写真を投稿してメッセージを読もう！'),
+          title: Text("ママ"),
+          trailing: Text('3日前'),
+          subtitle: Text('ありがとう！'),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -51,11 +60,11 @@ class MessageWidget extends StatelessWidget {
             vertical: 8.0,
           ),
           leading: ClipOval( // 画像を丸く切り取る
-            child: Image.asset('assets/img/grandfather.png'), 
+            child: Image.asset('assets/img/father.png'), 
           ),
-          title: Text("おじいちゃん"),
-          trailing: Text('1日前'),
-          subtitle: Text('メッセージ新着'),
+          title: Text("パパ"),
+          trailing: Text('1ヶ月前'),
+          subtitle: Text('頑張れ'),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -63,11 +72,11 @@ class MessageWidget extends StatelessWidget {
             vertical: 8.0,
           ),
           leading: ClipOval( // 画像を丸く切り取る
-            child: Image.asset('assets/img/grandmother.png'), 
+            child: Image.asset('assets/img/yuki.png'), 
           ),
-          title: Text("おばあちゃん"),
-          trailing: Text('3分前'),
-          subtitle: Text('写真を投稿してメッセージを読もう！'),
+          title: Text("ゆうき"),
+          trailing: Text('2ヶ月前'),
+          subtitle: Text('やるやん'),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -75,11 +84,11 @@ class MessageWidget extends StatelessWidget {
             vertical: 8.0,
           ),
           leading: ClipOval( // 画像を丸く切り取る
-            child: Image.asset('assets/img/grandfather.png'), 
+            child: Image.asset('assets/img/yuto.png'), 
           ),
-          title: Text("おじいちゃん"),
-          trailing: Text('1日前'),
-          subtitle: Text('メッセージ新着'),
+          title: Text("ゆうと"),
+          trailing: Text('2ヶ月前'),
+          subtitle: Text('ゆうとだよ'),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -87,11 +96,11 @@ class MessageWidget extends StatelessWidget {
             vertical: 8.0,
           ),
           leading: ClipOval( // 画像を丸く切り取る
-            child: Image.asset('assets/img/grandmother.png'), 
+            child: Image.asset('assets/img/kenshin.png'), 
           ),
-          title: Text("おばあちゃん"),
-          trailing: Text('3分前'),
-          subtitle: Text('写真を投稿してメッセージを読もう！'),
+          title: Text("けんしん"),
+          trailing: Text('3ヶ月前'),
+          subtitle: Text('ヒカキン見てみよっかな～'),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -99,11 +108,11 @@ class MessageWidget extends StatelessWidget {
             vertical: 8.0,
           ),
           leading: ClipOval( // 画像を丸く切り取る
-            child: Image.asset('assets/img/grandfather.png'), 
+            child: Image.asset('assets/img/yusaku.png'), 
           ),
-          title: Text("おじいちゃん"),
-          trailing: Text('1日前'),
-          subtitle: Text('メッセージ新着'),
+          title: Text("ゆうさく"),
+          trailing: Text('4ヶ月前'),
+          subtitle: Text('エペしよ！'),
         ), 
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
