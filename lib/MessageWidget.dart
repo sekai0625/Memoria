@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_memoria/ChatScreen.dart';
-import 'package:flutter_application_memoria/main.dart';
 
+// ユーザ一覧の画面
 class MessageWidget extends StatelessWidget {
   const MessageWidget({
     Key? key,
