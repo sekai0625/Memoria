@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_memoria/GalleryScreen.dart';
 import 'PhotoScreen.dart';
 
 // トーク画面
@@ -75,7 +76,7 @@ class ChatScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => PhotoScreen()
+                            builder: (context) => GalleryScreen()
                           )
                         );
                       }, // 投稿ボタンを押したときの処理

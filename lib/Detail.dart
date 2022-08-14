@@ -254,7 +254,7 @@ class Detail extends StatelessWidget {
   Widget ButtonArea(context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Colors.pink[100], // background
+        primary: Color.fromARGB(255, 243, 147, 181), // background
         onPrimary: Colors.white, // foreground
       ),
       onPressed: () {
