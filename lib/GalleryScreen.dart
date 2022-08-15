@@ -9,7 +9,7 @@ class GalleryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var imgList = [
-      imgItem('bell'),
+      imgItem('present_box'),
     ];
 
     return Scaffold(
@@ -47,62 +47,56 @@ class GalleryScreen extends StatelessWidget {
             Expanded(
               flex: 5, // 割合
               child: Container(
-                color: Colors.amber,
+                // color: Colors.amber,
                 child: Column(
                   children: <Widget>[
                     // ギャラリー、カメラアイコン
                     Container(
-                        color: Colors.red,
-                        child: Row(
-                          mainAxisAlignment:
-                              MainAxisAlignment.spaceBetween, // 両端寄せ
-                          children: <Widget>[
-                            // ギャラリー
-                            Container(
-                              color: Colors.blue,
-                              margin: EdgeInsets.only(left: 20),
-                              child: Text(
-                                'ギャラリー',
-                                style: TextStyle(
-                                  fontSize: 20,
-                                ),
+                      color: Colors.red,
+                      child: Row(
+                        mainAxisAlignment:
+                            MainAxisAlignment.spaceBetween, // 両端寄せ
+                        children: <Widget>[
+                          // ギャラリー
+                          Container(
+                            color: Colors.blue,
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text(
+                              'ギャラリー',
+                              style: TextStyle(
+                                fontSize: 20,
                               ),
                             ),
-                            // カメラアイコン
-                            Container(
-                              color: Colors.green,
-                              margin: EdgeInsets.only(right: 20, top: 7),
-                              child: IconButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              CameraScreen()));
-                                },
-                                icon: Icon(
-                                  Icons.camera_alt_outlined,
-                                  size: 35,
-                                ),
+                          ),
+                          // カメラアイコン
+                          Container(
+                            color: Colors.green,
+                            margin: EdgeInsets.only(right: 20, top: 7),
+                            child: IconButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => CameraScreen()));
+                              },
+                              icon: Icon(
+                                Icons.camera_alt_outlined,
+                                size: 35,
                               ),
                             ),
-                          ],
-                        )),
+                          ),
+                        ],
+                      ),
+                    ),
 
                     // ギャラリーコンテンツ
                     Container(
                       color: Colors.purple,
-                      // child: SingleChildScrollView(
-                      //   child: Column(
-                      //     children: <Widget>[
-                      //       GridView.count(
-                      //         crossAxisCount: 3,
-                      //         children: imgList,
-                      //       ),
-                      //     ],
-                      //   ),
+                      // child: GridView.count(
+                      //   crossAxisCount: 3,
+                      //   children: imgList,
                       // ),
-                    ),
+                    ),  
                   ],
                 ),
               ),
@@ -115,7 +109,7 @@ class GalleryScreen extends StatelessWidget {
 }
 
 Widget imgItem(String name) {
-  var image = "images/" + name + ".png";
+  var image = "assets/img/" + name + ".png";
   return Container(
     child: Image.asset(
       image,
