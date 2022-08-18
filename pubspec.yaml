@@ -71,6 +71,10 @@ flutter:
     - assets/img/kenshin.png
     - assets/img/present_box.png
     - assets/img/present.jpg
+    - assets/img/cork_board.jpg
+    - assets/img/fusen.png
+    - assets/img/fusen2.png
+    - assets/img/pin.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

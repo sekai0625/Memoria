@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_memoria/GalleryScreen.dart';
+// import 'package:flutter_application_memoria/GalleryScreen.dart';
 import 'package:flutter_application_memoria/GalleryScreen2.dart';
 import 'PhotoScreen.dart';
 

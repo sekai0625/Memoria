@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
 
 class UserList extends StatelessWidget {
   const UserList({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

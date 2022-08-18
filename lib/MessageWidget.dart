@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_memoria/ChatScreen.dart';
+// import 'package:flutter_application_memoria/ChatScreen.dart';
+import 'package:flutter_application_memoria/ChatScreen2.dart';
 
 // ユーザ一覧の画面
 class MessageWidget extends StatelessWidget {
@@ -15,7 +16,7 @@ class MessageWidget extends StatelessWidget {
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(builder: (BuildContext) {
-                return ChatScreen();
+                return ChatScreen2();
               })
             );
           },

@@ -92,6 +92,9 @@ class GalleryScreen extends StatelessWidget {
                     // ギャラリーコンテンツ
                     Container(
                       color: Colors.purple,
+                      child: SingleChildScrollView(
+                        
+                      ),
                       // child: GridView.count(
                       //   crossAxisCount: 3,
                       //   children: imgList,
